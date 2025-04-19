@@ -1,5 +1,5 @@
 {
-  "name": "starter",
+  "name": "recipe-finder",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -54,7 +54,7 @@
     "react-hook-form": "^7.51.5",
     "react-resizable-panels": "^2.0.19",
     "react-router": "^6.23.1",
-    "react-router-dom": "^6.23.1",
+    "react-router-dom": "^6.30.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.1",
@@ -71,5 +71,24 @@
     "tempo-devtools": "^2.0.100",
     "typescript": "^5.8.2",
     "vite": "^6.2.3"
-  }
+  },
+  "description": "Recipe Finder App for Final Project sa ADV102 ni Eliza Gwapa",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlwlrmwa/ADV102-FinalProject.git"
+  },
+  "keywords": [
+    "sir",
+    "awa",
+    "nalang",
+    "oh",
+    "pls"
+  ],
+  "author": "Eliza Gwapa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlwlrmwa/ADV102-FinalProject/issues"
+  },
+  "homepage": "https://github.com/dlwlrmwa/ADV102-FinalProject#readme"
 }
