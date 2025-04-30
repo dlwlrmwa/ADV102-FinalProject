@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { ChefHat, Search, User } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface NavbarProps {
   onLogin?: () => void;
@@ -24,6 +25,8 @@ const Navbar = ({
   isLoggedIn = false,
   userName = "",
 }: NavbarProps) => {
+  const navigate = useNavigate();
+
   return (
     <header className="w-full border-b bg-background sticky top-0 z-50">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
@@ -94,10 +97,10 @@ const Navbar = ({
             </div>
           ) : (
             <div className="flex items-center space-x-2">
-              <Button variant="ghost" onClick={onLogin}>
-                Login
+              <Button onClick={() => navigate("/login")}>Login</Button>
+              <Button variant="outline" onClick={() => navigate("/signup")}>
+                Sign Up
               </Button>
-              <Button onClick={onSignUp}>Sign Up</Button>
             </div>
           )}
         </div>
